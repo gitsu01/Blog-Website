@@ -1,0 +1,292 @@
+/* ----------- Global Resorses -----------  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+}
+body{
+    width: 100vw;
+    overflow: auto;
+}
+
+/* ---------------------------------------------------------------------------
+-------------------------- Main Page CSS ----------------------------------
+--------------------------------------------------------------------------- */
+
+.container{
+    width: 65vw;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 86px auto 0;
+    margin-bottom: 60px;
+}
+.tag{
+    font-size: 12px;
+    line-height: 14px;
+    color:#474747;
+    font-weight: 400;
+    background: #dfdfdf;
+    padding: 6px 9px;
+    margin: 5px;
+    border-radius: 3px;
+}
+/* ----------- navigation -----------  */
+.navigation{
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.navigation .main-title{
+    cursor: pointer;
+    /* font-weight: 500; */
+}
+.navigation .main-title span{
+    font-size: 25px;
+    color: #474747;
+    font-weight: 600;
+    cursor: pointer;
+}
+.navigation .main-menu{
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+    margin-left: 95px;
+}
+.navigation .main-menu ul{
+    width: 86%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.navigation .main-menu ul li .menu-link{
+    color: #777777;
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.8;
+}
+.navigation .main-menu ul li .menu-link:hover,
+.navigation .main-menu ul li .menu-link:active{
+    opacity: 1;
+    color: #FFBA9D;
+    transition-delay: 0.3s;
+}
+/* ----- search box -----  */
+.search-box{
+    width: 256px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+.search-box:active,
+.search-box:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.search-box #search-input{
+    width: 216px;
+    height: 100%;
+    outline: none;
+    font-size: 15px;
+    padding: 0 8px;
+    color: #777F;
+    font-weight: normal;
+    border: 1px solid #FFBA9D;
+}
+#search-input::placeholder{
+    color: #777F;
+    font-weight: normal;
+    opacity: 0.6;
+}
+.search-box #search{
+    height: 100%;
+    width: 40px;
+    margin: 0;
+    background: #FFBA9D ;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+}
+.search-box #search i{
+    color: #fff;
+    font-size: 16px;
+    
+}
+/* -------------- Main Body Part -------------  */
+.post-con{
+    width: 100%;
+    height: auto;
+    /* margin-top: 60px; */
+    display: flex;
+    justify-content: space-between;
+}
+/* -------------- Main Body Left Part -------------  */
+.post-con .left-side{
+    width: 27%;
+    min-height: 500px;
+    height: auto;
+    position: relative;
+}
+.post-con .left-side .catagory{
+    width: 100%;
+}
+.post-con .left-side .catagory .cat-main{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 23px;
+    color: #000;
+    opacity: 0.8;
+}
+.post-con .left-side .catagory .site-link{
+    color: #777777;
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.6;
+    margin: 10px 45px;
+    line-height: 25px;
+    cursor: pointer;
+}
+.post-con .left-side .catagory .site-link:hover,
+.post-con .left-side .catagory .site-link:active{
+    opacity: 1;
+    color: #FFBA9D;
+    transition-delay: 0.3s;
+}
+/* -------------- Social link -------------  */
+.post-con .left-side .catagory .social{
+    margin-top: 55px;
+    margin-left: 25px;
+    width: 100%;
+}
+.social .social-link{
+    margin-left: 10px;
+}
+.social .social-link i{
+    color: #777777;
+    font-size: 21px;
+
+}
+.social .social-link .fa-linkedin-in:hover{
+    color: #0e76a8;
+}
+.social .social-link .fa-github:hover{
+    color: #171515;
+}
+.social .social-link .fa-facebook:hover{
+    color: #4267B2;
+}
+.social .social-link .fa-instagram:hover{
+    color: #833AB4;
+}
+ .social .social-link .fa-twitter:hover{
+    color: #1DA1F2;
+}
+/* -------------- Main Body Right Part -------------  */
+.post-con .right-side{
+    width: 64%;
+    min-height: 500px;
+    /* background: greenyellow; */
+}
+.post-con .right-side .main-heading{
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.post-con .right-side .main-heading span{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 23px;
+    color: #000;
+    margin-bottom: 10px;
+    
+}
+.post-con .right-side .content-box{
+    margin-top: 30px;
+    width: 100%;
+    /* background: #833AB4; */
+    height: auto;
+    border-bottom: 1px solid #dfdfdf;
+
+}
+.post-con .right-side .content-box:hover{
+    box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, 0.15); 
+}
+.post-con .right-side .content-box .post-date{
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+.post-con .right-side .content-box .content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+.post-con .right-side .content-box .content .title{
+    width: 70%;
+    font-size: 19px;
+    font-weight: normal;
+}
+.post-con .right-side .content-box .content .tag-box{
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.footer{
+    width: 100vw;
+    height: 42px;
+    background: #F4F4F4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer .copyright span{
+    font-size: 12px;
+    line-height: 14px;
+    color: #777777;
+    opacity: 0.6;
+}
+
+/* ---------------------------------------------------------------------------
+-------------------------- Post Page CSS ----------------------------------
+--------------------------------------------------------------------------- */
+.post .post-title{
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: normal;
+    color: #777777;
+    text-transform: capitalize;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    border-bottom: #FFBA9D 1px solid;
+    margin-bottom: 40px;
+}
+.post .post-banner{
+    width: 736px;
+    display: flex;
+    justify-content: center;
+}
+.post .post-banner img{
+    width: auto;
+    max-width: 75%;
+    box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, 0.15); 
+    margin-bottom: 25px;
+}
+.post{
+    margin-bottom: 100px;
+}
